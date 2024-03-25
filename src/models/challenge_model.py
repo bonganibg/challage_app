@@ -25,3 +25,10 @@ class ChallengeModel():
 
     def set_winner(self):
         pass
+    
+    def __str__(self) -> str:
+        return '\n'.join([
+            f'Challenger: {self.challenger}',
+            f'Challenge: {self.name}',
+            f'Accepted: {self.accepted}'
+        ])
